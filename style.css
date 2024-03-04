@@ -110,6 +110,6 @@ hr {
 @media (max-width: 500px) {
     body {
         background-size: 80%;
-        background-position: -150% -35%, 10% 20%
+        background-position: -175% -35%, 275% 135%
     }
 }
