@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: var(--Dark-cyan);
+    position: relative;
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-position: -42.5% 185%, 132.5% -128.5%;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-size: 1.125rem;
+    color: var(--Very-dark-desaturated-blue);
+    margin-top: 4.35rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.125rem;
+    color: var(--Very-dark-desaturated-blue);
+    margin: 0;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+}
+p {
+    color: var(--Dark-gray);
+}
+span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-left: 0.35rem;
+}
+img {
+    border-radius: 1rem 1rem 0 0;
+}
+hr {
+    border-color: hsla(0, 0%, 59%, 0.100);
+}
+.container {
+    width: 350px;
+    height: 375px;
+    border-radius: 1rem;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 40px 120px -30px hsl(229, 23%, 23%,0.6);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem auto;
+}
+.img-container {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto;
+    border: 5px solid white;
+    position: absolute;
+    top: 5.5rem;
+    left: 7.65rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.vector {
+    border-radius: 50%;
+    margin: auto;
+}
+.location {
+    font-size: 0.875rem;
+    margin: 0.5rem;
+}
+.profile {
+    margin-bottom: 1.5rem;
+}
+.followers {
+    margin-left: 0;
+}
+.likes {
+    margin-right: 0.5rem;
+}
+.photos {
+    margin-right: 0.35rem;
+}
+.stat-name {
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem; 
+    font-weight: 400;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-size: 80%;
+        background-position: -150% -35%, 10% 20%
+    }
+}
